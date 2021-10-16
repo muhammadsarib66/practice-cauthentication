@@ -13,8 +13,8 @@ function gsignin(){
         console.log(res)
         // console.log(res)
         var user = res.user
-        img.src= user.photoUrl
-
+        img.src= user.photoURL
+        name.innerText = user.displayName
         email.innerText = user.email
 
     })
